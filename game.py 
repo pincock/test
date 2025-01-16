@@ -1,0 +1,26 @@
+space_invaders2.py  
+import pygame
+
+#initialize the pygame
+pygame.init()
+
+screen = pygame.display.set_mode((800, 600))
+
+#title and icon
+pygame.display.set_caption("Space Invaders")
+
+
+running = true 
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = false
+
+    screen.fill((0, 0, 0))
+    pygame.display.update()
+
+screen.fill((0, 0, 0))
+playerX = 370
+playerY = 480
+def player():
+    screen.blit(playerImg, (playerX, playerY))
