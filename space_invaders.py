@@ -57,8 +57,8 @@ player_img = pygame.transform.scale(player_img, (32, 32))  # Resize player image
 enemy_img = pygame.image.load('enemy.png')
 enemy_img = pygame.transform.scale(enemy_img, (32, 32))  # Resize enemy image
 
-bullet_img = pygame.image.load('bullet.png')
-bullet_img = pygame.transform.scale(bullet_img, (8, 16))  # Resize bullet image
+bullet_img = pygame.Surface((4, 16))
+bullet_img.fill((255, 255, 255))  # White color
 
 # Button
 button_font = pygame.font.Font('freesansbold.ttf', 32)
